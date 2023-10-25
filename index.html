@@ -4,38 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Chuck Norris Jokes</title>
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-
-
-
-<div class="page-container">
-<body class="body">
-        
-        
-        <div class="title-center" class="page-container2">
-            <h1 id="title"  >Chuck Norris Jokes</h1>
-        </div>
-        
-        <div class="center" id="joke-container">
-            
-            <h2 id="joke"></h2>
-            <button id="getJokeButton">Click Me For a Joke</button>       
-        </div>
-        
-        
-        
-        <div   class="center" id="joke-container" >
-        <h2>Submit Your Own Joke</h2>
-        <form id="jokeForm">
-            <label for="jokeInput">Enter your joke: </label>
-            <input type="text" id="jokeInput" required>
-            <button type="submit">Submit Joke</button>
-        </form>
-    </div>
+    <link rel="stylesheet" href="styles.css">
     
     <script src="script.js"></script>
+    <!-- OR
+    <script src="script.js defer"></script>
+    <script src="script.js async"></script>
+    -->
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="title-center">
+            <h1 id="title">Chuck Norris Jokes</h1>
+        </div>
+
+        <div class="center" id="joke-container">
+            <h2 id="joke"></h2>
+            <button id="getJokeButton">Click Me For a Joke</button>
+        </div>
+
+        <div class="center">
+            <h2>Submit Your Own Joke</h2>
+            <form id="jokeForm">
+                <label for="jokeInput">Enter your joke: </label>
+                <input type="text" id="jokeInput" required>
+                <button type="submit">Submit Joke</button>
+            </form>
+        </div>
+    </div>
+
 </body>
-</div>
 
 </html>

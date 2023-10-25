@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function () {
+
 const jokeElement = document.getElementById('joke');
 const jokeForm = document.getElementById('jokeForm');
 const jokeInput = document.getElementById('jokeInput');
@@ -13,7 +15,7 @@ fetchChuckNorrisJoke();
 
 
 const submitJoke = (e) => {
-    event.preventDefault();
+    e.preventDefault();
     const userJoke = jokeInput.value;
     jokeInput.value = '';
 };
@@ -42,3 +44,4 @@ jokeElement.addEventListener('mouseout', () => {
 document.getElementById('getJokeButton').addEventListener('click', fetchChuckNorrisJoke);
 jokeForm.addEventListener('submit', submitJoke);
 
+})
